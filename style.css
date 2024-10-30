@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(https://media.istockphoto.com/id/1126610893/photo/paradise-sandy-beach-with-coco-palm.webp?a=1&b=1&s=612x612&w=0&k=20&c=WhxDBYPUojxHmnwDgX3GPoPdOWPSxQyvS28EwFiM9MA=) no-repeat;
+   
+    background-position: left center;
+    background-size: cover;
+
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(8px) brightness(78%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+
+}
+
+.inputbox{
+    margin: 30px 0px;
+ 
+    width: 310px;
+    position: relative;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label{
+    position: absolute;
+    left:5%;
+    top:54%;
+    transform: translateY(-50%);
+    color:#fff;
+    font-size: 1em;
+    transition: 0.5s;
+    pointer-events:none ; 
+    
+}
+
+input:focus~label,input:valid~label{
+    top:-3px;
+
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+  }
+
+
+.inputbox i{
+    position: absolute;
+    right: 8px;
+    color:hsl(0, 0%, 100%);
+    font-size: 1.2em;
+    bottom:12px;
+   
+  }
+
+
+
+
+
+.forgot{
+    margin: -10px 0px 17px;
+    font-size: 0.9em;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.forgot label input{
+    margin-right: 5px;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    border-radius: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.register{
+    font-size: 0.9em;
+    color: #fff;
+    text-align:center ;
+    margin: 25px 0px 10px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+
+@media screen  and (max-width:480px){
+    .form-box{width: 100%;
+    border-radius: 0px;
+    }
+}
